@@ -40,6 +40,6 @@ while COUNT < 20:
             break
     else:
         break
-print "TEAM 1 includes {0}". format(TEAM1)
-print "TEAM 2 includes {0}". format(TEAM2)
-print "TEAM 3 includes {0}". format(TEAM3)
+print [TEAM1[0] + ',' + TEAM1[1] + ',' + TEAM1[2] + ',' + TEAM1[3]]
+print [TEAM2[0] + ',' + TEAM2[1] + ',' + TEAM2[2] + ',' + TEAM2[3]]
+print [TEAM3[0] + ',' + TEAM3[1] + ',' + TEAM3[2] + ',' + TEAM3[3]]
