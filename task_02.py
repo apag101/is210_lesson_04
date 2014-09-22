@@ -19,4 +19,4 @@ while ACCESS == 0:
             print "Access is denied, please try again later."
             break
     else:
-        break
+        ACCESS == True
