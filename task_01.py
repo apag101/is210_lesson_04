@@ -7,11 +7,15 @@ Practice analyzing strings."""
 import data
 print data.SHAKESPEARE
 LI = []
+W = []
 for l in data.SHAKESPEARE.split("\n"):
-    LI.append(len(l))
+    W.append("{0}".format(l).strip())
+    for s in W:
+        WO = s.split(" ")
+        LI.append(len(WO))
 MAXIMUM_WORDS = sorted(LI, reverse=True)[0]
 MINIMUM_WORDS = sorted(LI)[0]
-AVERAGE_WORDS = sum(LI) / float(len(LI))
+AVERAGE_WORDS = float(sum(LI)) / float(len(LI))
 
 LA = []
 COUNT = 0
