@@ -10,7 +10,7 @@ COUNT = 0
 TRACK = [3, 2, 1]
 
 while ACCESS == 0:
-    msg = "What is your PASSWORD ({0} attempts left)?"
+    MSG = "What is your PASSWORD ({0} attempts left)?"
     P = raw_input(msg.format(TRACK[COUNT]))
     if P not in data.PASSWORD:
         COUNT += 1
