@@ -132,4 +132,3 @@ VERSUS = [
     'Frey',
     'Freya'
 ]
-

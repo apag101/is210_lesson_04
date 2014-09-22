@@ -36,8 +36,7 @@ while COUNT < 20:
             TEAM3.append(NAME2[COUNT])
             COUNT += 1
             COUNT2 += 1
-        else:
-            break
+        else: break
     else:
         break
 print "TEAM 1 includes {0}". format(TEAM1)

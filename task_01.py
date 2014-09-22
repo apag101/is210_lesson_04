@@ -14,10 +14,10 @@ MINIMUM_WORDS = sorted(LI)[0]
 AVERAGE_WORDS = sum(LI) / float(len(LI))
 
 LA = []
-count = 0
+COUNT = 0
 for a in data.SHAKESPEARE.split("\n"):
     LA.append(a)
 for i in LA:
     if "Crispian" in i:
-        count += 1
-NUM_CRISPIAN = count
+        COUNT += 1
+NUM_CRISPIAN = COUNT
