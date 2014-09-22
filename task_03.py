@@ -9,5 +9,5 @@ S = []
 for d in data.TRANSACTIONS:
     S += [sum(d)]
 TOTAL = sum(S)
-MINIMUM = sorted(S)[0]
-MAXIMUM = sorted(S, reverse=True)[0]
+MINIMUM = min(S)
+MAXIMUM = max(S)

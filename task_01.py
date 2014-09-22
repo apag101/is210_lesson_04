@@ -13,8 +13,8 @@ for l in data.SHAKESPEARE.split("\n"):
     for s in W:
         WO = s.split(" ")
         LI.append(len(WO))
-MAXIMUM_WORDS = sorted(LI, reverse=True)[0]
-MINIMUM_WORDS = sorted(LI)[0]
+MAXIMUM_WORDS = max(LI)
+MINIMUM_WORDS = min(LI)
 AVERAGE_WORDS = float(sum(LI)) / float(len(LI))
 
 LA = []
