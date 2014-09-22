@@ -5,9 +5,9 @@ TASK3
 Practice looping math calculations."""
 
 import data
-s = []
+S = []
 for d in data.TRANSACTIONS:
-    s += [sum(d)]
-TOTAL = sum(s)
-MINIMUM = sorted(s)[0]
-MAXIMUM = sorted(s, reverse = True)[0]
+    S += [sum(d)]
+TOTAL = sum(S)
+MINIMUM = sorted(S)[0]
+MAXIMUM = sorted(S, reverse=True)[0]

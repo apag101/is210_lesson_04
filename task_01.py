@@ -6,18 +6,18 @@ Practice analyzing strings."""
 
 import data
 print data.SHAKESPEARE
-li = []
+LI = []
 for l in data.SHAKESPEARE.split("\n"):
-    li.append(len(l))
-MAXIMUM_WORDS = sorted(li, reverse = True)[0]
-MINIMUM_WORDS = sorted(li)[0]
-AVERAGE_WORDS = sum(li) / float(len(l))
+    LI.append(len(l))
+MAXIMUM_WORDS = sorted(LI, reverse=True)[0]
+MINIMUM_WORDS = sorted(LI)[0]
+AVERAGE_WORDS = sum(LI) / float(len(LI))
 
-la = []
+LA = []
 count = 0
 for a in data.SHAKESPEARE.split("\n"):
-    la.append(a)
-for i in la:
+    LA.append(a)
+for i in LA:
     if "Crispian" in i:
         count += 1
 NUM_CRISPIAN = count

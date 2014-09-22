@@ -131,4 +131,5 @@ VERSUS = [
     'Heimdall',
     'Frey',
     'Freya'
-] 
+]
+

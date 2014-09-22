@@ -8,36 +8,38 @@ import data
 TEAM1 = []
 TEAM2 = []
 TEAM3 = []
-name = [] 
-name2 = []
-connect = []
+NAME = []
+NAME2 = []
+CONNECT = []
 
 for n in data.MULTIPLAYERS.split("\n"):
-    name.append(n)
-count = 0
-while count < 20:
-    for i in name:
-        name2.append(name[count][0:12].strip())
-        count += 1
-count = 0
-while count < 20:
-    for c in name:
-        connect.append(name[count][12:].strip())
-        count += 1
-count = 1
-count2 = 1
-while count < 20:
-    if int(connect[count]) == 1:
-        while count2 < 5:
-            TEAM1.append(name2[count])
-            count += 1
-            TEAM2.append(name2[count])
-            count += 1
-            TEAM3.append(name2[count])
-            count += 1
-            count2 += 1
-        else:break
-    else:break
+    NAME.append(n)
+COUNT = 0
+while COUNT < 20:
+    for i in NAME:
+        NAME2.append(NAME[COUNT][0:12].strip())
+        COUNT += 1
+COUNT = 0
+while COUNT < 20:
+    for c in NAME:
+        CONNECT.append(NAME[COUNT][12:].strip())
+        COUNT += 1
+COUNT = 1
+COUNT2 = 1
+while COUNT < 20:
+    if int(CONNECT[COUNT]) == 1:
+        while COUNT2 < 5:
+            TEAM1.append(NAME2[COUNT])
+            COUNT += 1
+            TEAM2.append(NAME2[COUNT])
+            COUNT += 1
+            TEAM3.append(NAME2[COUNT])
+            COUNT += 1
+            COUNT2 += 1
+        else:
+            break
+    else:
+        break
 print "TEAM 1 includes {0}". format(TEAM1)
 print "TEAM 2 includes {0}". format(TEAM2)
 print "TEAM 3 includes {0}". format(TEAM3)

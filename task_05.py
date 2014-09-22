@@ -6,10 +6,12 @@ Practice create versus Matchups."""
 
 import data
 MATCHUPS = ('')
-allm = []
+ALLM = []
 for ROW_INDEX, ROW_NAME in enumerate(data.VERSUS):
     for COLUMN_INDEX, COLUMN_NAME in enumerate(data.VERSUS):
         if ROW_INDEX > COLUMN_INDEX or ROW_INDEX < COLUMN_INDEX:
-            allm.append('{0}, {1}, {2}'.format(COLUMN_INDEX, ROW_NAME, COLUMN_NAME).strip())
-            MATCHUPS = (allm)
-        else: break
+            ALLM.append('{0}, {1}, {2}'.format\
+                        (COLUMN_INDEX, ROW_NAME, COLUMN_NAME).strip())
+            MATCHUPS = (ALLM)
+        else:
+            break
