@@ -10,9 +10,8 @@ COUNT = 0
 REPLIES = ["Not correct", "Umm Yes ?", "I do not remember"]
 TRACK = [3, 2, 1]
 
-while ACCESS is not True:
-    P = raw_input\
-    ("What is your PASSWORD ({0} attempts left)?".format(TRACK[COUNT]))
+while ACCESS != True:
+    P = raw_input("What is your PASSWORD ({0} attempts left)?".format(TRACK[COUNT]))
     if P not in data.PASSWORD:
         print REPLIES[COUNT]
         COUNT += 1
